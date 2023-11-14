@@ -1,0 +1,89 @@
+.Login {  
+    background-image: url('../../../Assets/Images/PageBackgroundImage.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    padding-bottom: 20px;
+}
+
+.Login > form {
+    background-color: white;
+    width: 300px; /* Set the width to your preferred size */
+    margin: 20px auto;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #ccc;
+}
+
+.Login h2 {
+    font: italic small-caps bold 16px/2 cursive;
+    position: relative;
+    font-size: 50px;
+}
+
+.Login label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.Login .input {
+    margin-bottom: 20px;
+}
+
+.Login input {
+    width: 90%;
+    padding: 8px;
+    border: 1px solid gray; /* Input border color */
+    border-radius: 5px;
+    transition: border-color 0.3s ease; /* Smooth transition for input border color */
+}
+
+.Login input:focus {
+    outline: none;
+    border-color: blue; /* Input border color when focused */
+}
+
+.Login button {
+    font-size: larger;
+    width: 100%;
+    padding: 10px;
+    background-color: blue; /* Blue button background color */
+    color: white; /* Button text color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition for button background color */
+}
+
+.Login button:hover {
+    background-color: red; /* Red button background color on hover */
+}
+
+/* Add these styles to your existing CSS */
+
+.Login .register {
+    display: flex; /* Use flexbox to center the text */
+    justify-content: center; /* Center align text horizontally */
+    margin-top: 15px; /* Add margin to the top of the text */
+}
+
+.Login span a {
+    text-decoration: none; /* Remove underline */
+    display: inline-block; /* Make it a block element */
+    padding: 0px 10px; /* Add padding to the links */
+    background-color: blue; /* Blue background color */
+    border-radius: 5px;
+    color: white; /* White text color */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for background and text color */
+
+}
+
+/* Hover effect */
+.Login a:hover {
+    background-color: red; /* Red background on hover */
+    color: white; /* Blue text color on hover */
+}

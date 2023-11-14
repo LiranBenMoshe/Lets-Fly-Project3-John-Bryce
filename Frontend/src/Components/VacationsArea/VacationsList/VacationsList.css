@@ -1,0 +1,82 @@
+/* VacationList.css */
+
+.VacationsList {
+    background-image: url('../../../Assets/Images/PageBackgroundImage.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    text-align: center;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.VacationsList h2 {
+    margin-top: 45px;
+    font: italic small-caps bold 16px/2 cursive;
+    position: relative;
+    font-size: 50px;
+}
+
+.filter-options {
+    display: flex;
+    width: 300px;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.filter-options label {
+    text-align: center;
+    width: 150px;
+    margin: 10px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.filter-options label.off {
+    background-color: #ccc;
+    color: #000;
+}
+
+.cards-container {
+    background-color: white;
+    margin-left: 40px;
+    margin-bottom: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 110px;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.pagination {
+    margin-bottom: 15px;
+    display: inline-block;
+}
+
+.prev-button,
+.next-button {
+    margin: 0 5px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 5px 15px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.prev-button {
+    background-color: #ff0000;
+}
+
+.prev-button:disabled,
+.next-button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}

@@ -1,0 +1,18 @@
+.AuthMenu a {
+    padding: 5px 10px;
+    background-color: #007bff; /* Blue button background color */
+    color: white; /* Button text color */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center; /* Center the content horizontally and vertically */
+    margin: 5px 0;
+    transition: background-color 0.3s ease; /* Add a transition for smooth color change */
+    text-decoration: none;
+}
+
+.AuthMenu a:hover {
+    background-color: #007bff; /* Set your preferred color for "Read More" button on hover */
+    box-shadow: 0px 0px 10px rgba(0, 123, 255, 0.5); /* Add a shadow on hover */
+}

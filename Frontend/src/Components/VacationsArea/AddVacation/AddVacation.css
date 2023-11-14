@@ -1,0 +1,119 @@
+.AddVacation {  
+    background-image: url('../../../Assets/Images/PageBackgroundImage.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    padding-bottom: 20px;
+    margin-top: 40px ;
+}
+
+.AddVacation > form {
+    background-color: white;
+    width: 300px; /* Set the width to your preferred size */
+    margin: 20px auto;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #ccc;
+}
+
+.AddVacation h2 {
+    margin-top: 45px;
+    font: italic small-caps bold 16px/2 cursive;
+    position: relative;
+    font-size: 50px;
+}
+
+.AddVacation label {
+    display: block;
+    font-weight: bold;
+}
+
+.AddVacation .input-group {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+
+.AddVacation .input {
+    flex: 1 0 100%; /* Allow items to grow, but don't shrink below their content size */
+    margin-bottom: 10px;
+}
+
+.AddVacation .input-group label {
+    width: 100%; /* Make labels take full width */
+}
+
+
+.AddVacation input,
+.AddVacation textarea {
+    resize: none;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.AddVacation input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.AddVacation input:focus,
+.AddVacation textarea:focus {
+    outline: none;
+    border-color: blue;
+}
+
+.AddVacation button {
+    width: 100%;
+    padding: 10px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+}
+
+.AddVacation button:hover {
+    background-color: red;
+}
+
+.AddVacation {
+    max-width: 100%;
+    height: auto;
+}
+
+.custom-image-input {
+    display: inline-block;
+    max-width: 100%;
+    padding: 0;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.custom-image-input:hover {
+    background-color: #eee;
+}
+
+.AddVacation img {
+    border-radius: 10px;
+    max-width: 100%;
+    height: auto;
+}

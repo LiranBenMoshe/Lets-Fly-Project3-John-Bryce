@@ -1,0 +1,39 @@
+.Home {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.Home .images-left img,
+.images-right img {
+    width: 100%;
+    height: 180px;
+    display: block;
+    margin-bottom: 20px;
+}
+
+
+.Home .images-left,
+.images-right {
+    margin-top: 70px;
+    flex: 1;
+}
+
+.Home .content {
+    flex: 2;
+    padding: 20px;
+    text-align: center;
+}
+
+.Home .welcome-heading {
+    margin-top: 70px;
+    color: #333;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.Home .welcome-paragraph {
+    color: #555;
+    font-size: 1.2em;
+    line-height: 1.6;
+}

@@ -1,0 +1,37 @@
+.fixed-navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    margin-bottom: 5px;
+}
+
+.navbar-brand {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.nav-link {
+    text-decoration: none; /* Remove default text underline */
+    position: relative; /* Set relative positioning to enable absolute positioning of the underline */
+    color: inherit; /* Inherit the text color */
+    transition: color 0.3s; /* Add a transition effect for the text color */
+}
+
+.nav-link::after {
+    content: ''; /* Add content for the underline */
+    position: absolute; /* Set absolute positioning to position the underline */
+    left: 0; /* Align the underline to the left of the button */
+    bottom: -2px; /* Move the underline below the button */
+    width: 100%; /* Make the underline the full width of the button */
+    height: 2px; /* Set the height of the underline */
+    background-color: rgb(25, 0, 255);  /* Define the underline color */
+    transform: scaleX(0); /* Initially set the width of the underline to 0 (hidden) */
+    transform-origin: 0% 50%; /* Set the transform origin to start from the left */
+    transition: transform 0.3s; /* Add a transition effect for the underline width */
+}
+
+.nav-link:hover::after {
+    transform: scaleX(1); /* Expand the underline to full width on hover */
+}

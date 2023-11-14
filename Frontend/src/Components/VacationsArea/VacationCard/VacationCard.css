@@ -1,0 +1,227 @@
+.VacationCard {
+    background-color: white;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    text-align: center;
+    box-sizing: border-box;
+    width: 300px;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.VacationCard .image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.VacationCard img {
+    border-radius: 10px;
+    width: 300px;
+    height: 180px;
+    display: block;
+}
+
+.VacationCard .destination {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px;
+    border-radius: 0;
+    z-index: 1;
+}
+
+.VacationCard .edit-button {
+    position: relative;
+}
+
+.VacationCard .edit-button::before {
+    content: "Edit Vacation";
+    display: none;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    border-radius: 5px;
+    padding: 3px 6px;
+    left: 100%;
+    width: 80px;
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+.VacationCard .edit-button:hover::before {
+    display: block;
+}
+
+.VacationCard .delete-button {
+    position: relative;
+}
+
+.VacationCard .delete-button::before {
+    content: "Delete Vacation";
+    display: none;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    border-radius: 5px;
+    padding: 3px 6px;
+    /* Adjusted padding */
+    right: 100%;
+    /* Positioned to the left of the button */
+    width: 80px;
+    /* Adjusted width */
+    text-align: center;
+    font-size: 0.8rem;
+    /* Smaller font size */
+}
+
+.VacationCard .delete-button:hover::before {
+    display: block;
+}
+
+/* Rest of the CSS remains unchanged */
+
+
+.VacationCard h3 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: 10px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    /* Set your preferred text color */
+}
+
+.VacationCard p {
+    margin: 5px 0;
+    font-size: 1rem;
+    color: #555;
+}
+
+.VacationCard .description {
+    font-size: 18px;
+    text-align: center;
+    overflow-y: auto; /* Allow vertical overflow with a scrollbar */
+    width: 300px;
+    height: 100px;
+    box-sizing: border-box;
+}
+
+
+.VacationCard .card-top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.VacationCard .h3 {
+    font-size: 1.5rem;
+}
+
+.VacationCard .card-bottom {
+    display: flex;
+    flex-direction: column;
+}
+
+.VacationCard .date {
+    font-size: large; /* Adjust the font size */
+    color: black; /* Set your preferred text color */
+    font-style: oblique; /* You can add more styles as needed */
+}
+
+.VacationCard .date-and-price {
+    display: flex;
+    flex-direction: column;
+    margin-top: auto;
+}
+
+.VacationCard .price {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: white;
+    background-color: #007bff;
+    margin-top: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Position delete button at the top right corner with transparent background */
+.VacationCard .delete-button {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    right: 0;
+    font-size: 30px;
+    background-color: transparent;
+    /* Set the background color to transparent */
+    border: none;
+    /* Remove the border */
+}
+
+/* Position edit button at the top left corner */
+.VacationCard .edit-button {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+.VacationCard .delete-button:hover,
+.VacationCard .edit-button:hover {
+    background-color: lightgray;
+    /* Change to your preferred color */
+    font-weight: bold;
+}
+
+
+.VacationCard .follow-button {
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    /* Adjusted to align the content to the left */
+    margin: 5px 0 0;
+    transition: background-color 0.3s ease;
+}
+
+.VacationCard .follow-button.following {
+    background-color: red;
+    /* Set your preferred color for "Following" state */
+    transition: background-color 0.3s ease;
+    /* Add a transition for smooth color change */
+}
+
+.VacationCard .follow-button.following:hover {
+    background-color: red;
+    /* Set your preferred color for "Following" state on hover */
+    transform: scale(1.05);
+    /* Add a slight scale on hover */
+    box-shadow: 0px 0px 10px rgba(139, 0, 0, 0.5);
+    /* Add a shadow on hover */
+}
+
+
+.VacationCard .follow-button:hover {
+    background-color: 007bff;
+    /* Set your preferred color for "Follow" state on hover */
+    transform: scale(1.05);
+    /* Add a slight scale on hover */
+    box-shadow: 0px 0px 10px rgba(139, 0, 0, 0.5);
+    /* Add a shadow on hover */
+}
