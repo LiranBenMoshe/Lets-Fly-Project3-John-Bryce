@@ -4,7 +4,7 @@ import UserModel from "../3-models/user-model";
 import jwt from "jsonwebtoken";
 
 // Token secret key:
-const tokenSecretKey = "I-Need-Vacation";
+const tokenSecretKey = "I-Need-New-Menu";
 
 // Create JWT token:
 function getNewToken(user: UserModel): string {

@@ -86,10 +86,10 @@ async function getOneUser(userId: number): Promise<UserModel[]> {
     // Execute query:
     const users = await dal.execute(sql, [userId]);
 
-    // Extract he single vacation:
+    // Extract the single user:
     const user = users[0];
 
-    // If vacation not found:
+    // If user not found:
     if (!user) throw new ResourceNotFoundError(userId);
 
     // Return data:

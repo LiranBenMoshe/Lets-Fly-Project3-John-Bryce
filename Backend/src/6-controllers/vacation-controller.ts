@@ -61,7 +61,7 @@ router.post("/vacations", verifyAdmin, async (request: Request, response: Respon
         // Add image from request.files into request.body:
         request.body.image = request.files?.image;
 
-        // Get vacation send from frontend:
+        // Get vacation that sent from the frontend:
         const vacation = new VacationModel(request.body);
 
         // Response back to database:
