@@ -107,7 +107,10 @@ email: admin@gmail.com
 Password: admin123
 
 User:
+
 email: user@gmail.com
 Password: user123
 
 The project should open up on http://localhost:3000/ and load up!
+
+This project is licensed under the GNU General Public License v3.0.
