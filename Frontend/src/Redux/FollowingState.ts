@@ -16,7 +16,7 @@ export enum FollowingActionType {
 export interface FollowingAction {
     type: FollowingActionType;
     payload: any;
-}
+} 
 
 // 4. Reducer - function performing the needed actions (the action object is the one sent via dispatch function).
 export function followingReducer(currentState = new FollowerState(), action: FollowingAction): FollowerState {
